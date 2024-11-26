@@ -1,0 +1,86 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f2f8f9;
+    color: #4e4d4b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+  /* Add Christmasy red background with green highlights */
+  h1 {
+    background-color: #ff4f58;
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    font-size: 4em;
+    text-shadow: 2px 2px 5px #ffcccb;
+    border-bottom: 5px solid #3b7d3e;
+  }
+
+  /* Style for the div containers */
+  .sophia, .brodie {
+    background-color: #fffbf0;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    font-size: 1.5em;
+  }
+
+  .sophia:hover, .brodie:hover {
+    transform: scale(1.1);
+    background-color: #def7e8;
+  }
+
+  .sophia a, .brodie a {
+    text-decoration: none;
+    color: #c27f35;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #c27f35;
+    border-radius: 5px;
+    background-color: #fff3e0;
+    transition: all 0.3s ease;
+  }
+
+  .sophia a:hover, .brodie a:hover {
+    background-color: #c27f35;
+    color: white;
+    border-color: #fff3e0;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  /* Add some Christmas-themed decorations */
+  body::before {
+    content: "❄️❄️❄️";
+    font-size: 3em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: snowflake 2s infinite;
+  }
+
+  body::after {
+    content: "🎄";
+    font-size: 3em;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: snowflake 3s infinite;
+  }
+
+  @keyframes snowflake {
+    0% {
+      top: -10%;
+      opacity: 1;
+    }
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+}
